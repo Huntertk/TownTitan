@@ -1,0 +1,21 @@
+.navBlogContainer{
+    height: 100px;
+}
+
+.navMainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navlinksContainer{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.navlinksContainer a{
+    color: #dedcdc;
+    font-size: 15px;
+    font-weight: 500;
+}

@@ -8,9 +8,12 @@ import cardAvatarImgThree from '../assets/images/avatarThree.png'
 import cardBackgroundImg from '../assets/images/cardBackgroundImg.png'
 import cardBackgroundImgTwo from '../assets/images/cardBackgroundImgTwo.png'
 import cardBackgroundImgThree from '../assets/images/cardBackgroundImgThree.png'
+import Navbar from '../components/Navbar'
 
 const Blog = () => {
   return (
+    <>
+    <Navbar />
     <main className='blogMainContainer'>
       <p className="pageTitle">Our Blogs</p>
       <div className="searchContainer">
@@ -64,6 +67,7 @@ const Blog = () => {
         </div>
       </div>
     </main>
+    </>
   )
 }
 

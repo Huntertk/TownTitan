@@ -4,6 +4,7 @@ import contactImg from '../assets/images/conactImg.png'
 import { MdLocationOn, MdEmail } from 'react-icons/md';
 import { BsTwitter,BsInstagram,BsLinkedin } from 'react-icons/bs';
 import { AiFillFacebook, AiFillYoutube } from 'react-icons/ai';
+import Navbar from '../components/Navbar';
 
 const Contact = () => {
 
@@ -11,6 +12,8 @@ const Contact = () => {
         e.preventDefault();
     }
   return (
+    <>
+    <Navbar />
     <main className='contactMainContainer'>
       <div className="contactPageContainer">
         <div className="contactTextContainer">
@@ -51,6 +54,7 @@ const Contact = () => {
         </div>
       </div>
     </main>
+    </>
   )
 }
 
