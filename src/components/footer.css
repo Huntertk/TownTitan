@@ -1,0 +1,63 @@
+.footerMainContainer{
+    background-color: #0E243D;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    position: relative;
+}
+.sideIconContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.textSideIcon{
+    font-weight: 500;
+    font-size: 18px;
+    color: #707E8F;
+}
+.iconContainer{
+    display: flex;
+    gap: 1rem;
+
+}
+.icon{
+    color: #707E8F;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+.address{
+    font-weight: 400;
+    font-size: 18px;
+    color: #707E8F;
+}
+.footerLogo{
+    margin-bottom: 3rem;
+}
+
+.sideImgContainer{
+    width: 241px;
+    height: 291px;
+    margin-top: 1rem;
+}
+.yellowCircle{
+    position: absolute;
+    left: 0px;
+}
+.purpleCircle{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+

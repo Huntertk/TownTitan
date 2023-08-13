@@ -1,0 +1,70 @@
+
+.worksMainContainer{
+    background-color: #ffffff;
+    max-width: 1100px;
+    margin: 5rem auto 4rem auto;
+    min-height: 100vh;
+}
+.worksTextContainer{
+    text-align: center;
+}
+.worksPage{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #EBA334;
+    text-transform: uppercase;
+}
+.worksTitle{
+    font-weight: 500;
+    font-size: 44px;
+    width: 90%;
+    color: #0e243d;
+    margin: 1rem 0;
+    margin-left: 2rem;
+}
+
+.worksPara{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    color: #5a5a5a;
+}
+
+.worksCardContainer{
+    display: flex;
+    gap: 2rem;
+}
+.workCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 373px;
+    height: 479.14px;
+    padding: 2rem;
+    margin: 3rem 0;
+    background: #171B25;
+    border-radius: 30px;
+}
+.workCardSubtitle{
+    font-size: 400;
+    font-size: 18px;
+    color: #f9c351;
+}
+.workCardTitle{
+    font-weight: 600;
+    color: #ffffff;
+    width: 85%;
+    margin: 1rem 0;
+}
+
+.workCardPara{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+.workCard .btn{ 
+    font-size: 15px;
+}
