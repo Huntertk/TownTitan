@@ -11,6 +11,7 @@ const Navbar = () => {
                 <nav className="navlinksContainer">
                     <Link to='/'>Home</Link>
                     <Link to="/about">About Us</Link>
+                    <Link to="/services">Services</Link>
                     <Link to="/blog">Blog</Link>
                <Link to="/contact"> <button className="btn">CONTACT US</button></Link>
                 </nav>

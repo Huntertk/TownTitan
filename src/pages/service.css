@@ -1,0 +1,55 @@
+.serviceOfferContainer{
+    max-width: 1100px;
+    margin: 3rem auto;
+}
+.servicesPageCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.servicesPageImg{
+    width: 200px;
+}
+.ServicesOfferTitle{
+    font-weight: 400;
+    font-size: 20px;
+    color: #f9c351;
+    text-align: center;
+    margin: 2rem 0;
+}
+.servicesPageCard button.btn{
+    color: #ffffff;
+}
+.servicesPageCard{
+    width: 400px;
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+    transition: all 0.5s linear;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.servicesPageCardTitle{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 1.1rem 0;
+}
+
+.servicesPageCardPara{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 30px;
+    margin: 1rem  0;
+}
+
+.servicesPageCard:hover{
+    transform: scale(1);
+}

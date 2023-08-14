@@ -2,6 +2,7 @@ import React from 'react'
 import './about.css'
 import aboutBackground from '../assets/images/aboutBackground.png'
 import tick from '../assets/images/tick.png'
+import { Link } from 'react-router-dom'
 const About = () => {
   return (
     <section id='about' className='aboutMainSection'>
@@ -31,7 +32,7 @@ const About = () => {
                 </p>
             </div>
         </div>
-      <button className='btn'>Learn More</button>
+      <Link to="/about"><button className='btn'>Learn More</button></Link>
       </div>
     </section>
   )

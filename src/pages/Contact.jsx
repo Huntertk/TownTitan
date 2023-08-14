@@ -28,6 +28,10 @@ const Contact = () => {
                 <textarea placeholder='Message' cols="30" rows="10"></textarea>
                 <select>
                     <option value="servic">Service</option>
+                    <option value="servic">Web Developement</option>
+                    <option value="servic">Mobile Developement</option>
+                    <option value="servic">Content Strategy</option>
+                    <option value="servic">Digital Strategy</option>
                 </select>
                 <button className="btn">Submit</button>
             </form>

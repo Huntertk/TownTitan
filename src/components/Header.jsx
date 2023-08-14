@@ -22,9 +22,9 @@ const Header = () => {
             <div className="navContainer">
                 <img src={logo} alt="" />
                 <nav className="navlinks">
-                    <p><a href='#home'>Home</a></p>
-                    <p><a href="#about">About Us</a></p>
-                    <p><a href="#service">Services</a></p>
+                    <p><Link to='/'>Home</Link></p>
+                    <p><Link to="/about">About Us</Link></p>
+                    <p><Link to="/services">Services</Link></p>
                     <p><Link to="blog">Blog</Link></p>
                <Link to="contact"> <button className="btn">CONTACT US</button></Link>
                 </nav>
@@ -32,7 +32,7 @@ const Header = () => {
             <div className="contentContainer">
                 <h1>Unlock Your Business's Potential with TownTitan's Digital Marketing Solutions</h1>
                 <p>TownTitan is a digital marketing agency focused on helping local businesses such as cafes, restaurants, and gyms increase their online presence and attract more customers.</p>
-                <button className="btn btn-learn-more">Learn More</button>
+                <Link to="/services" ><button className="btn btn-learn-more">Learn More</button></Link>
             </div>
         </header>
     </section>

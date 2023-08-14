@@ -91,6 +91,9 @@
     color: #ffffff;
 }
 
+.email{
+    text-transform: capitalize;
+}
 .conatctIcon{
     width: 20px;
     height: 25px;

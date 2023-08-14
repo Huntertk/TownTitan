@@ -5,6 +5,7 @@ import './project.css'
 import gym from '../assets/images/gym.png'
 import resturant from '../assets/images/resturant.jpg'
 import coffee from '../assets/images/cofffee.jpg'
+import Footer from '../components/Footer';
 
 const Project = () => {
     const param = useParams()
@@ -47,6 +48,7 @@ const Project = () => {
     <img src={newData[0].image} alt="" />
             </div>
         </div>
+        <Footer />
     </main>
   )
 }
