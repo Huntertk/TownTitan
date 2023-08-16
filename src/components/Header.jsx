@@ -20,7 +20,7 @@ const Header = () => {
             <img className="purplEsclips" src={purplEsclips} />
 
             <div className="navContainer">
-                <img src={logo} alt="" />
+                <img src={logo} alt="" className='heaaderlogo' />
                 <nav className="navlinks">
                     <p><Link to='/'>Home</Link></p>
                     <p><Link to="/about">About Us</Link></p>

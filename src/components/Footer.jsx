@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import logo from '../assets/images/footerLogo.png'
+import logo from '../assets/images/logo.png'
 import metaImg from '../assets/images/meta.png'
 import yellowCircle from '../assets/images/Ellipse67.png'
 import purpleCircle from '../assets/images/Ellipse69.png'

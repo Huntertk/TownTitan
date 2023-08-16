@@ -9,6 +9,11 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+.heaaderlogo{
+    cursor: pointer;
+    width: 50px;
+    transform: scale(2.1);
+}
 .navlinks{
     display: flex;
     align-items: center;
@@ -97,7 +102,7 @@ header{
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 128.37px;
+    top: 126.37px;
     left: 900px;   
     background: #7EC0A8;
     border-radius: 50%;

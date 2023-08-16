@@ -43,6 +43,8 @@
     color: #707E8F;
 }
 .footerLogo{
+    width: 50px;
+    transform: scale(2.5);
     margin-bottom: 3rem;
 }
 
