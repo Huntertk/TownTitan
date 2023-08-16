@@ -12,7 +12,7 @@ header{
 .heaaderlogo{
     cursor: pointer;
     width: 50px;
-    transform: scale(2.1);
+    transform: scale(3.5);
 }
 .navlinks{
     display: flex;
