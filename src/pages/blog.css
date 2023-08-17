@@ -1,131 +1,105 @@
-.blogMainContainer{
-    display: flex;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
+.blogPageMainContainer{
+    width: 100%;
 }
 
-.pageTitle{
+.blogtopContainer{
+   text-align: center;
+   margin: 1.5rem 0;
+}
+.blogtopContainer h1{
+    font-size: 24px;
+    color: #0e243d;
     font-weight: 500;
-    font-size: 36px;
-    color: #0E243D;
-}
-.searchContainer{
-    display: flex;
-    margin-top: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    gap: 1.5rem;
-}
-.searchBtnContainer{
-    position: absolute;
-    right: 85px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #3AB17C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.inputBox{
-    width: 858px;
-    height: 60px;
-    border-radius: 50px;
-    border: 1px solid #d9d9d9;
-    color: #d9d9d9;
-    padding: 2rem;
-
-}
-.filterIcon{
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
+    margin: 0.5rem 0;
 }
 
-.filterIcon:hover,
-.filterIcon:active{
-    animation: shaking 1s linear;
-}
-.blogCardContainer{
+.blogPostSearchContainer{
     display: flex;
-    gap: 2rem;
     align-items: center;
     justify-content: space-evenly;
-    width: 1303px;
-    height: 603px;
-    margin-top: 2rem;
+}
+.greeenEsclips{
+    background-color: #3AB17C;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5.3rem;
+}
+.searchIconImg{
+    width: 50%;
+}
+.searchInput{
+    padding: 1rem ;
+    height: 40px;
+    width: 60%;
+    border-radius: 30px;
+    border: 1px solid #d9d9d9;
+}
+.filtericon{
+    width: 40px;
+    height: 40px;
 }
 
-.blogCard{
-    text-align: center;
+.blogPostCardContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 372px;
-    border: 1px solid #d9d9d9;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-
+    margin: 2rem 0;
+}
+.blogPostCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
 }
 
-.developerDetailsContainer{
+.blogPostDevDetails{
+    align-self: flex-start;
     display: flex;
     align-items: center;
-    gap: 1rem;
-    width: 100%;
-    padding: 1rem;
-    text-align: start;
+    margin: 1.5rem;
 }
-.cardAvatarImg{
+.blogPostAvatarImg{
     width: 60px;
     height: 60px;
+    margin-right: 0.8rem;
 }
-.developerTitle,
-.developerPost{
+.blogPostCardTitle{
     font-weight: 500;
     font-size: 18px;
     color: #5a5a5a;
 }
-.developerPost{
-font-size: 14px;
+.blogPostCardPostName{
+    font-weight: 500;
+    font-size: 14px;
+    color: #5a5a5a;
 }
 .time{
     font-weight: 400;
-    font-size: 12px;
-    color: #5a5a5a;
+        font-size: 12px;
+        color: #5a5a5a;
 }
 
-.blogCardPara{
+.blogPostDesc{
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #5a5a5a;
-    margin-top: 0.51rem;
-    margin-bottom: 1rem;
-    width: 90%;
-}
-
-.blogCard .btn{
-    margin-top: 1rem;
+    color:#5a5a5a;
     margin-bottom: 1rem;
 }
 
-
-/*Filter Btn*/
-.filterContainer{
+.filterContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     min-height: 300px;
-    top: 320px;
-    right: 300px;
+    top: 280px;
+    right: 0px;
     position: absolute;
     background-color: #0E243D;
     width: 200px;
@@ -137,7 +111,7 @@ font-size: 14px;
 }
 
 
-.filterBtn{
+.filterBtn {
     background-color: #3AB17C;
     color: #ffffff;
     border: 1px solid #3AB17C;
@@ -148,6 +122,45 @@ font-size: 14px;
     cursor: pointer;
     animation: horizontal-shaking 2s linear;
 }
+
+
+/*Media Queries*/
+@media screen and (min-width: 1020px) {
+    .blogPageMainContainer{
+        width: 1100px;
+        margin: 2rem auto;
+        min-height: 100vh;
+    }
+    .blogPostSearchContainer{
+        justify-content: unset;
+    }
+    .blogPostSearchContainer{
+        justify-content: center;
+    }
+    .searchInput{
+        height: 55px;
+    }
+    .greeenEsclips{
+        width: 50px;
+        height: 50px;
+        margin-left: -3rem;
+    }
+
+    .filtericon{
+        height: 50px;
+        width: 50px;
+        margin-left: 1rem;
+    }
+    .blogPostCardContainer{
+        flex-direction: row;
+    }
+    .filterContainer{
+        right:300px;
+    }
+}
+
+
+
 
 @keyframes horizontal-shaking {
     0% {

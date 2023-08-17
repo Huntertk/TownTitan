@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="contactTextContainer">
             <p className="contactPageTitle">Contact US</p>
             <p className="contactPara">Need to connect with us?<br /> Fill out the form with your inquiry.</p>
-            <img src={contactImg} alt="" />
+            <img src={contactImg} alt="" className='contactPageImg'/>
         </div>
             <form  className="formContainer" onSubmit={handleSubmit}>
                 <input type="text" placeholder='Name' />

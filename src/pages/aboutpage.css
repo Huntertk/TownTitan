@@ -1,9 +1,11 @@
 .aboutPageContainer{
-    max-width: 1100px;
+    width: 100%;
     margin: 3rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 1rem;
 }
 .aboutPageMainTitle{
     font-weight: 600;
@@ -25,6 +27,14 @@
     line-height: 30px;
     margin: 1rem 0;
 }
-.email{
-    align-self: flex-start;
+
+/*Media Queries*/
+@media screen and (min-width: 1020px) {
+    .aboutPageContainer {
+            max-width: 1100px;
+            text-align: unset;
+        }
+        .email {
+            align-self: flex-start;
+        }
 }

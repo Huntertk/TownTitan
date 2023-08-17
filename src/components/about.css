@@ -1,35 +1,41 @@
 .aboutMainSection{
     background-color: #ffffff;
-    max-width: 1100px;
-    margin: 10rem auto 4rem auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-.aboutImgContainer{
-    width: 40%;
-}
-.aboutBackgroundImg{
-    width: 420px;
-}
-.aboutTextContainer{
-    width: 50%;
+    width: 100%;
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
+
+.aboutBackgroundImg{
+    width: 100%;
+}
+.aboutTextContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.aboutTextContainer .btn{
+    display: block;
+    margin: 0 auto;
+}
+
+.big{
+    display: none;
+}
 .aboutPage{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #EBA334;
     text-transform: uppercase;
+    text-align: center;
 }
 .aboutTitle{
     font-weight: 600;
-    font-size: 34px;
+    font-size: 20px;
     width: 80%;
     color: #0e243d;
     margin: 1rem 0;
@@ -38,8 +44,8 @@
     
    color: #5A5A5A;
    font-weight: 500;
-   font-style: 18px;
-   line-height: 35px;
+   font-style: 14px;
+   line-height: 25px;
 }
 .aboutFeaturesContainer{
     display: flex;
@@ -50,5 +56,78 @@
 }
 
 .aboutFeaturesText{
+    color: #5A5A5A;
+    font-size: 14px;
+    line-height: 25px;
     width: 95%;
+}
+
+@media screen and (min-width: 1020px) {
+    .small{
+        display: none;
+    }
+    .big{
+        display: unset;
+    }
+
+    .aboutMainSection {
+            background-color: #ffffff;
+            max-width: 1100px;
+            margin: 4rem auto 4rem auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .aboutImgContainer {
+            width: 40%;
+        }
+    
+        .aboutBackgroundImg {
+            width: 420px;
+        }
+    
+        .aboutTextContainer {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+    
+        .aboutPage {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #EBA334;
+            text-transform: uppercase;
+        }
+    
+        .aboutTitle {
+            font-weight: 600;
+            font-size: 34px;
+            width: 80%;
+            color: #0e243d;
+            margin: 1rem 0;
+        }
+    
+        .aboutPara {
+    
+            color: #5A5A5A;
+            font-weight: 500;
+            font-style: 18px;
+            line-height: 35px;
+        }
+    
+        .aboutFeaturesContainer {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            justify-content: space-between;
+        }
+    
+        .aboutFeaturesText {
+            width: 95%;
+        }
 }

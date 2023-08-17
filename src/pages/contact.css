@@ -1,13 +1,17 @@
 .contactPageContainer{
-    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 90vh;
+    text-align: center;
+}
+.contactPageImg{
+    width: 100%;
 }
 .contactTextContainer{
-    width: 40%;
+    /* width: 40%; */
+    margin-top: 1rem;
 }
 .contactPageTitle{
     color: #0E243D;
@@ -25,18 +29,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 533px;
-    height: 578px;
+    width: 100%;
+    margin-bottom: 1.5rem;
     flex-direction: column;
-    gap: 1rem;    
-    border: 1px solid #d9d9d9;
+    gap: 1rem;
     border-radius: 12px;
 
 }
 
 .formContainer input,
 .formContainer select{
-    width: 470px;
+    width: 90%;
     height: 60px;
     border: 1px solid #d9d9d9;
     border-radius: 12px;
@@ -47,7 +50,7 @@
 }
 
 .formContainer textarea {
-    width: 470px;
+    width: 90%;
     height: 177px;
     border: 1px solid #5a5a5a;
     border-radius: 10px;
@@ -62,6 +65,7 @@
 
 
 .contactFooter{
+    padding: 0.5rem;
     display: flex;
     width: 100%;
     height: 202px;
@@ -86,7 +90,7 @@
 .email,
 .textContact{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 27px;
     color: #ffffff;
 }
@@ -101,8 +105,128 @@
 }
 
 .conatctIcons{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     color: #ffffff;
     margin-left: 1rem;
+}
+
+
+/*Media Queries*/
+@media screen and (min-width: 1020px) {
+    .contactPageContainer {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+    
+        .contactTextContainer {
+            width: 40%;
+        }
+    
+        .contactPageTitle {
+            color: #0E243D;
+            font-weight: 600;
+            font-size: 36px;
+    
+        }
+    
+        .contactPara {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #5a5a5a;
+        }
+    
+        .formContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 533px;
+            height: 578px;
+            flex-direction: column;
+            gap: 1rem;
+            border: 1px solid #d9d9d9;
+            border-radius: 12px;
+    
+        }
+    
+        .formContainer input,
+        .formContainer select {
+            width: 470px;
+            height: 60px;
+            border: 1px solid #d9d9d9;
+            border-radius: 12px;
+            padding: 1rem;
+            color: #5a5a5a;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    
+        .formContainer textarea {
+            width: 470px;
+            height: 177px;
+            border: 1px solid #5a5a5a;
+            border-radius: 10px;
+            resize: none;
+            padding: 1rem;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+            outline: none;
+            color: #5a5a5a;
+        }
+    
+    
+        .contactFooter {
+            display: flex;
+            width: 100%;
+            height: 202px;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #0E243D;
+        }
+    
+        .leftSideBottomContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    
+        .contactAddress,
+        .contactEmail {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        .loaction,
+        .email,
+        .textContact {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #ffffff;
+        }
+    
+        .email {
+            text-transform: capitalize;
+        }
+    
+        .conatctIcon {
+            width: 20px;
+            height: 25px;
+            color: #ffffff;
+        }
+    
+        .conatctIcons {
+            width: 30px;
+            height: 30px;
+            color: #ffffff;
+            margin-left: 1rem;
+        }
 }

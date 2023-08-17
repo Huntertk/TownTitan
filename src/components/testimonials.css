@@ -1,8 +1,7 @@
 .testimonialsMainContainer{
     background-color: #ffffff;
-    max-width: 1100px;
-    margin: 8rem auto;
-    min-height: 100vh;
+    width: 100%;
+    margin: 1rem 0;
     position: relative;
 }
 
@@ -19,18 +18,18 @@
     text-transform: uppercase;
 }
 .testimonialTitle{
-    font-weight: 400;
-    font-size: 44px;
-    width: 90%;
+    font-weight: 600;
+    font-size: 20px;
     color: #0e243d;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .testimonialCardContainer{
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap;
     align-items: center;
+    overflow-x: scroll;
+    padding: 1rem;
 }
 
 .testimonialCard {
@@ -40,20 +39,25 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 30%;
-    height: 418px;
+    min-width: 289px;
+    min-height: 254px;
     padding: 1.5rem;
     background-color: #F5F6F7;
     margin-top: 6rem;
 }
+.testimonialCardTextContainer{
+    display: flex;
+    flex-direction: column-reverse;
+}
 .testimonialCardAvatarImg{
     margin-top: -4rem;
+    margin-left: -12rem;
 }
 
 .tesimonialCardPara{
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 25px;
     color: #5A5A5A;
 }
 .tesimonialCardTitle,
@@ -69,7 +73,94 @@
 }
 
 .quoteImg{
-    position: absolute;
-    right: 30px;
-    top: -20px;
+    display: none;
+}
+
+
+@media screen and (min-width: 1020px) {
+.testimonialsMainContainer {
+        background-color: #ffffff;
+        max-width: 1100px;
+        margin: 8rem auto;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .testimonialTextContainer {
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .testimonialPage {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #EBA334;
+        text-transform: uppercase;
+    }
+
+    .testimonialTitle {
+        font-weight: 400;
+        font-size: 44px;
+        width: 90%;
+        color: #0e243d;
+        margin-bottom: 1rem;
+    }
+
+    .testimonialCardContainer {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: unset;
+    }
+
+    .testimonialCard {
+        text-align: center;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 30%;
+        height: 418px;
+        padding: 1.5rem;
+        background-color: #F5F6F7;
+        margin-top: 6rem;
+    }
+
+    .testimonialCardAvatarImg {
+        margin-top: -4rem;
+        margin-left: 0;
+    }
+
+    .tesimonialCardPara {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #5A5A5A;
+    }
+
+    .tesimonialCardTitle,
+    .tesimonialCardPost {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        color: #5A5A5A;
+    }
+    
+    .tesimonialCardPost {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .quoteImg {
+        display: unset;
+        position: absolute;
+        right: 30px;
+        top: -20px;
+    }
+    .testimonialCardTextContainer{
+        flex-direction: column;
+    }
 }

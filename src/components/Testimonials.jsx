@@ -20,9 +20,12 @@ const Testimonials = () => {
           <div className="starContainer">
             <img src={star} alt="" className='testimonialCardStarImg' />
           </div>
+          <div className="testimonialCardTextContainer">
+
           <p className="tesimonialCardPara">”Towntitan has been very impressive, they willtake the time to understand your business and requirements and meticulously deliver on what they say they will.</p>
           <p className="tesimonialCardTitle">John Adam</p>
           <p className="tesimonialCardPost">CEO Media</p>
+          </div>
         </div>
 
          <div className="testimonialCard">
@@ -30,10 +33,13 @@ const Testimonials = () => {
           <div className="starContainer">
             <img src={star} alt="" className='testimonialCardStarImg' />
           </div>
+          <div className="testimonialCardTextContainer">
+
           <p className="tesimonialCardPara">”I’ve been really happy with the team at Towntitan. They have been extremely responsive, attentive to my needs, flexible and will provide suggestions outside the scope of work just to be helpful
 </p>
           <p className="tesimonialCardTitle">Michael John</p>
           <p className="tesimonialCardPost">Co- Founder Teams</p>
+          </div>
         </div>
 
          <div className="testimonialCard">
@@ -41,9 +47,12 @@ const Testimonials = () => {
           <div className="starContainer">
             <img src={star} alt="" className='testimonialCardStarImg' />
           </div>
+          <div className="testimonialCardTextContainer">
+
           <p className="tesimonialCardPara">”Towntitan provides us with great confidence we can actually start growing our business. Nice that someone has our back. We are only three people.”</p>
           <p className="tesimonialCardTitle">Adam</p>
           <p className="tesimonialCardPost">CEO Media</p>
+          </div>
         </div>
       </div>
     </section>

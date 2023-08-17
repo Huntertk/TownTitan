@@ -1,13 +1,13 @@
 .ctaMainContainer{
     background-color: #F5F6F7;
-    max-width: 1100px;
-    margin: 5rem auto;
-    height: 475px;
+    min-width: 354px;
+    min-height: 361px;
+    margin: 5rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 3rem;
+    justify-content: space-between;
+    padding: 1rem;
     text-align: center;
     border-radius: 30px;
     position: relative;
@@ -15,25 +15,80 @@
 
 .imgTopSide{
     position: absolute;
+    width: 60px;
+    height: 60px;
     z-index: -1;
     top: -40px;
-    left: -50px;
+    left: 0px;
 }
 
 .imgBottomSide{
     position: absolute;
-    right: -50px;
+    width: 60px;
+    height: 60px;
+    right: 0px;
     bottom: -40px;
     z-index: -1;
 }
 .ctaTitle{
-    font-weight: 400;
-    font-size: 44px;
+    font-weight: 600;
+    font-size: 22px;
     color: #0E243D;
+    margin: 0.51rem 0;
 }
 .ctaPara{
     font-weight: 400;
     font-size: 18px;
     line-height: 35px;
     color: #5A5A5A;
+    margin: 0.51rem;
+}
+
+
+@media screen and (min-width: 1020px) {
+    .ctaMainContainer {
+            background-color: #F5F6F7;
+            max-width: 1100px;
+            margin: 5rem auto;
+            height: 475px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 3rem;
+            text-align: center;
+            border-radius: 30px;
+            position: relative;
+        }
+    
+        .imgTopSide {
+            height: 104px;
+            width: 104px;
+            position: absolute;
+            z-index: -1;
+            top: -40px;
+            left: -50px;
+        }
+    
+        .imgBottomSide {
+            height: 104px;
+            width: 104px;
+            position: absolute;
+            right: -50px;
+            bottom: -40px;
+            z-index: -1;
+        }
+    
+        .ctaTitle {
+            font-weight: 400;
+            font-size: 44px;
+            color: #0E243D;
+        }
+    
+        .ctaPara {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 35px;
+            color: #5A5A5A;
+        }
 }

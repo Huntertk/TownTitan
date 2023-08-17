@@ -1,17 +1,21 @@
 import React from 'react'
 import './about.css'
 import aboutBackground from '../assets/images/aboutBackground.png'
+import aboutBackgroundOne from '../assets/images/aboutBackgroundOne.png'
 import tick from '../assets/images/tick.png'
 import { Link } from 'react-router-dom'
 const About = () => {
   return (
+    <>
+    <p className="aboutPage">About Us</p>
     <section id='about' className='aboutMainSection'>
       <div className="aboutImgContainer">
-        <img src={aboutBackground} alt="" className='aboutBackgroundImg' />
+        <img src={aboutBackground} alt="" className='aboutBackgroundImg big' />
+        <img src={aboutBackgroundOne} alt="" className='aboutBackgroundImg small' />
       </div>
       <div className="aboutTextContainer">
         <div className="aboutTextTopContainer">
-            <p className="aboutPage">About Us</p>
+            
             <p className='aboutTitle'>We are the best digital agency.</p>
             <p className="aboutPara">
                 At TownTitan, we are more than just a digital marketing agency - we are your strategic partner in online success.
@@ -35,6 +39,7 @@ const About = () => {
       <Link to="/about"><button className='btn'>Learn More</button></Link>
       </div>
     </section>
+    </>
   )
 }
 

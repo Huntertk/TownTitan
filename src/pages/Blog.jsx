@@ -65,9 +65,9 @@ const Blog = () => {
 
   
   return (
-
-    <>
-    { 
+    <main>
+      <Navbar />
+      { 
       isFilterOpen &&
       <div className="filterContainer">
         <button className='filterBtn' onClick={() => {
@@ -80,38 +80,98 @@ const Blog = () => {
         })}
       </div>
     }
-    <Navbar />
-    <main className='blogMainContainer'>
-      <p className="pageTitle">Our Blogs</p>
-      <div className="searchContainer">
-        <input type="text" placeholder='Search...' className='inputBox' />
-        <div className="searchBtnContainer">
-            <img src={searchIcon} alt="" className='searchIcon' />
-        </div>
-        <img src={filterIcon} alt=""  className='filterIcon' onClick={handleFilterOpen}/>
-      </div>
-      <div className="blogCardContainer">
-        {
-          postData.map((cardData) => {
-            return  <div className="blogCard" key={cardData.id}>
-            <img src={cardData.postImg} alt="" className='cardCoverImg'/>
-            <div className="developerDetailsContainer">
-                <img src={cardData.avatarImg} alt="" className='cardAvatarImg'/>
-                <div>
-                  <p className="developerTitle">{cardData.title}</p>
-                  <p className="developerPost">{cardData.postTitle}</p>
-                  <p className="time">{cardData.time}</p>
-                </div>
+      <section className="blogPageMainContainer">
+        <div className="blogtopContainer">
+          <h1>Our Blogs</h1>
+          <div className="blogPostSearchContainer">  
+            <input type="text" placeholder="Search..." className='searchInput'/>
+            <div className="greeenEsclips">
+              <img src={searchIcon} alt="" className='searchIconImg'/>
             </div>
-            <p className="blogCardPara">{cardData.postPara}</p>
-            <Link to={`/blog/${cardData.id}`} ><button className="btn">Read more</button></Link>
+            <div className="blogfilBtnContainer">
+              <img src={filterIcon} alt="" className='filtericon' onClick={handleFilterOpen} />
+            </div>
+          </div>
         </div>
-          })
-        }
-      </div>
+          <div className="blogPostCardContainer">
+            {
+              postData.map((item) => {
+                 return <div className="blogPostCard" key={item.id}>
+              <img src={item.postImg} alt="" />
+              <div className="blogPostDevDetails">
+                <img src={item.avatarImg} alt="" className='blogPostAvatarImg' />
+                <div className="blogPostDevDetailsTextContainer">
+                  <p className="blogPostCardTitle">
+                    {item.title}
+                  </p>
+                  <p className="blogPostCardPostName">
+                    {item.postTitle}
+                  </p>
+                  <p className="time">
+                    {item.time}
+                  </p>
+                </div>
+              </div>
+              <p className="blogPostDesc">{item.postPara}</p>
+                  <Link to={`/blog/${item.id}`} >
+                    <button className='btn'>Read More</button>
+                    </Link>
+            </div>
+              })
+            }
+            
+          </div>
+      </section>
+
+      <Footer />
     </main>
-    <Footer />
-    </>
+
+    // <main>
+    // { 
+    //   isFilterOpen &&
+    //   <div className="filterContainer">
+    //     <button className='filterBtn' onClick={() => {
+    //       setPostData(data)
+    //       setIsFilterOpen(false)
+    //     }}
+    //       >All</button>
+    //     {data.map((item) => {
+    //       return <button key={item.id} className='filterBtn' onClick={() => filterPost(item.id)}>{item.postTitle}</button>
+    //     })}
+    //   </div>
+    // }
+    // <Navbar />
+    // <div className='blogMainContainer'>
+    //   <p className="pageTitle">Our Blogs</p>
+    //   <div className="searchContainer">
+    //     <input type="text" placeholder='Search...' className='inputBox' />
+    //     <div className="searchBtnContainer">
+    //         <img src={searchIcon} alt="" className='searchIcon' />
+    //     </div>
+    //     <img src={filterIcon} alt=""  className='filterIcon' onClick={handleFilterOpen}/>
+    //   </div>
+    //   <div className="blogCardContainer">
+    //     {
+    //       postData.map((cardData) => {
+    //         return  <div className="blogCard" key={cardData.id}>
+    //         <img src={cardData.postImg} alt="" className='cardCoverImg'/>
+    //         <div className="developerDetailsContainer">
+    //             <img src={cardData.avatarImg} alt="" className='cardAvatarImg'/>
+    //             <div>
+    //               <p className="developerTitle">{cardData.title}</p>
+    //               <p className="developerPost">{cardData.postTitle}</p>
+    //               <p className="time">{cardData.time}</p>
+    //             </div>
+    //         </div>
+    //         <p className="blogCardPara">{cardData.postPara}</p>
+    //         <Link to={`/blog/${cardData.id}`} ><button className="btn">Read more</button></Link>
+    //     </div>
+    //       })
+    //     }
+    //   </div>
+    // </div>
+    // <Footer />
+    // </main>
   )
 }
 

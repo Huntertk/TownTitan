@@ -1,45 +1,45 @@
 .servicesMainContainer{
     background-color: #ffffff;
-    max-width: 1100px;
-    margin: 3rem auto;
-    min-height: 100vh;
+    width: 100%;
+    margin: 3rem 0;
     display: flex;
+    flex-direction: column;
     gap:3rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .servicesTextContainer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem;
     gap: 2rem;
 }
 .servicesPage{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
     color: #EBA334;
     text-transform: uppercase;
 }
 .servicesTitle{
     font-weight: 600;
-    font-size: 34px;
-    width: 90%;
+    font-size: 20px;
     color: #0e243d;
-    margin: 1rem 0;
 }
 .servicesPara{
     color: #5A5A5A;
     font-weight: 500;
-    font-style: 18px;
-    line-height: 35px;
+    font-style: 14px;
+    line-height: 25px;
 }
 .servicesCardContainer{
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
 }
 .serviceCard{
     text-align: start;
@@ -47,8 +47,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 45%;
-    height: 287px;
     padding: 1.5rem;
 }
 
@@ -79,4 +77,99 @@
 
 .four{
     background-color: #DC3434;
+}
+
+@media screen and (min-width: 1020px) {
+    .servicesMainContainer {
+            background-color: #ffffff;
+            max-width: 1100px;
+            margin: 3rem auto;
+            min-height: 100vh;
+            display: flex;
+            gap: 3rem;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+    
+        .servicesTextContainer {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+    
+        .servicesPage {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #EBA334;
+            text-transform: uppercase;
+        }
+    
+        .servicesTitle {
+            font-weight: 600;
+            font-size: 34px;
+            width: 90%;
+            color: #0e243d;
+            margin: 1rem 0;
+        }
+    
+        .servicesPara {
+            color: #5A5A5A;
+            font-weight: 500;
+            font-style: 18px;
+            line-height: 35px;
+        }
+    
+        .servicesCardContainer {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .serviceCard {
+            text-align: start;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 45%;
+            height: 287px;
+            padding: 1.5rem;
+        }
+    
+        .serviceCardTitle {
+            font-weight: 500;
+            font-size: 22px;
+            color: #ffffff;
+            margin-top: 1.2rem;
+        }
+    
+        .serviceCardPara {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: #ffffff;
+        }
+    
+        .one {
+            background-color: #386AED;
+        }
+    
+        .two {
+            background-color: #EBA334;
+        }
+    
+        .three {
+            background-color: #8a48de;
+        }
+    
+        .four {
+            background-color: #DC3434;
+        }
+
 }

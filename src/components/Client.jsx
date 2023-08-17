@@ -15,7 +15,7 @@ const Client = () => {
       <div className="cardContainer">
         <div className="card">
           <div className="cardEclips one">
-            <img src={planningImg} alt="" className='logo' />
+            <img src={planningImg} alt="" className='cardEllipsLogo' />
           </div>
           <div className="cardText">
             <p className='cardHeading'>Planning</p>
@@ -26,7 +26,7 @@ const Client = () => {
 
          <div className="card">
           <div className="cardEclips two">
-            <img src={designingImg} alt="" className='logo' />
+            <img src={designingImg} alt="" className='cardEllipsLogo' />
           </div>
           <div className="cardText">
             <p className='cardHeading'>Designing</p>
@@ -37,7 +37,7 @@ const Client = () => {
 
          <div className="card">
           <div className="cardEclips three">
-            <img src={processingImg} alt="" className='logo' />
+            <img src={processingImg} alt="" className='cardEllipsLogo' />
           </div>
           <div className="cardText">
             <p className='cardHeading'>Processing</p>
